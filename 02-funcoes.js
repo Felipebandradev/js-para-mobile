@@ -35,14 +35,12 @@ function exemplo2(){
 
 
 function exercio01(  valor1, valor2){
- var resultado =   valor1 - valor2; 
-  return resultado;
+  return   valor1 - valor2;   
 }
 
-var valor1 = 10;
-var valor2 = 8;
-var valor4 = 20;
-var valor3 = 38;
 
-console.log(exercio01(valor1, valor2));
-console.log(exercio01(valor3, valor4));
+
+let  resultado1 = exercio01(10, 8);
+let resultado2 = exercio01(11, 20);
+
+console.log(Math.abs(resultado1),",",Math.abs(resultado2));
