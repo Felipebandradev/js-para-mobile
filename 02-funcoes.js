@@ -34,15 +34,26 @@ function exemplo2(){
 03) Mostre os valores processados pela funçao no terminal. */
 
 
-function exercio01(  valor1, valor2){
-  return   valor1 - valor2;   
-}
+// function exercio01(  valor1, valor2){
+//   return   valor1 - valor2;   
+// }
 
 
-let  resultado1 = exercio01(10, 8);
-let resultado2 = exercio01(11, 20);
 
-console.log(Math.abs(resultado1),",",Math.abs(resultado2));
+
+// let  resultado1 = exercio01(10, 8);
+// let resultado2 = exercio01(11, 20);
+
+// console.log(Math.abs(resultado1),",",Math.abs(resultado2));
+
+// refatorando
+
+const calculaDiferenca  = (valor1, valor2) => Math.abs(valor1 - valor2);
+
+let  resultado1 = calculaDiferenca(20, 8);
+let resultado2 = calculaDiferenca(4, 20);
+
+console.log(resultado1,",",resultado2);
 
 /* Função Arrow Funtion */
 
@@ -70,7 +81,19 @@ const saudacao = cliente => console.log("Olá "+ cliente);
 saudacao("Beltrano");
 saudacao("Ciclano");
 
-const calculaMetade = valor => { return console.log(valor/2); };
+const calculaMetade = valor => console.log(valor/2); 
 
 calculaMetade(330);
 calculaMetade(404);
+
+console.log("-----------------------------------------")
+
+const exercio02 = pessoa => console.log( pessoa.toUpperCase());
+
+exercio02("bruno");
+exercio02("moura");
+exercio02("valeska");
+
+
+
+
