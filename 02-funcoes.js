@@ -39,8 +39,38 @@ function exercio01(  valor1, valor2){
 }
 
 
-
 let  resultado1 = exercio01(10, 8);
 let resultado2 = exercio01(11, 20);
 
 console.log(Math.abs(resultado1),",",Math.abs(resultado2));
+
+/* Função Arrow Funtion */
+
+const exemplo3 = () => {
+    console.log("Arrow Function!!");
+};
+
+exemplo3();
+
+// const saudacao = (cliente) => {
+//     console.log("Olá " + cliente);
+// };
+
+// omitir os parênteses do parâmetro (SOMENTE QUANDO FOR UM)
+
+// const saudacao = cliente => {
+//     console.log("Olá "+ cliente);
+// };
+
+// omitir as chaves {} (SOMENTE QUANDO FOR UMA ÚNICA INTRUÇÃO)
+
+
+const saudacao = cliente => console.log("Olá "+ cliente);
+
+saudacao("Beltrano");
+saudacao("Ciclano");
+
+const calculaMetade = valor => { return console.log(valor/2); };
+
+calculaMetade(330);
+calculaMetade(404);
