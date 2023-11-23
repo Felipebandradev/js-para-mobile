@@ -27,3 +27,29 @@ console.log("--------------------------------------------");
 console.log(penha);
 console.log(smp);
 console.log(tatuape);
+
+console.log("--------------------------------------------");
+
+const [tesla, eisten, newton] = ["Tesla", "Eisten", "Newton"]
+
+console.log(tesla);
+console.log(eisten);
+console.log(newton);
+
+console.log("--------------------------------------------");
+
+const recursos = [
+    ["Notebook", "Tv Oled", "Computador Desktop"],
+    texto =>  texto.toUpperCase()
+];
+
+console.log(recursos);
+
+const [produtos, converter] = recursos;
+
+console.log(produtos[1]);
+
+for( const produto of produtos){
+    console.log("Produto: "+converter(produto));
+}
+
