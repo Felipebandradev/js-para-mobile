@@ -1,29 +1,25 @@
 // 01-var-let-const.js
 
-var idade = 18 ; // ESCOPO GLOBL
-// let mensagem; declarando essa variavel antes do if, o escopo dela vira global no caso do let
-
+var idade = 18; // ESCOPO GLOBAL
 if( idade >= 18){
-    var mensagem = "É adulto"; // Global
-   // let mensagem = "É adulto"; // ESCOPO BLOCO
-} else{
-    var mensagem = "É menor"; // Global
- //   let mensagem = "É menor"; //ESCOPO BLOCO
+    // let mensagem = "É adulto!"; // ESCOPO DE BLOCO
+} else {
+    // let mensagem = "É menor"; // ESCOPO DE BLOCO
 }
 
 console.log(idade);
-// vai dar erro com let
-console.log(mensagem);
 
+/* Dará erro pois mensagem só existe dentro
+do bloco if/else */
+// console.log(mensagem);
 
-
-const meuNome = "Felipe";
+const meuNome = "Tiago";
 console.log(meuNome);
 
-// Reatribuição NÃO é possível em constantes
-// meuNome = "Felipe Barbosa";
-// console.log(meuNome);
+// Reatribuição NÃO É possível em constantes
+// meuNome = "Tiago B. dos Santos";
+console.log(meuNome);
 
-// constantes não podem começar vazias, zeradas elas precisam ser declaradas
-// e este valor NÃO PODE SER MODIFICADO
-const escola = "SENAC";
+// Constantes sempre são declaradas com algum valor
+// E este valor NÃO PODE SER modificado
+const escola = "Senac";
