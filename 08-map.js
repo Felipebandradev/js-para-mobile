@@ -35,11 +35,36 @@ Como calcular?
 E mostre no console.*/
 
 const blackFriday = cursos.map(
-    curso => {
-        let desconto = curso.preco * 0.10;
-        let precoFinal = Math.abs(desconto - curso.preco);
-        return ["Preço: R$"+curso.preco+",00", "Desconto: R$"+desconto+",00", "Preço com deconto: R$"+precoFinal+",00"]
+    ({preco}) => {
+        let desconto = preco * 0.10;
+        let precoFinal = Math.abs(desconto - preco);
+        return ["Preço: R$"+preco+",00", "Desconto: R$"+desconto+",00", "Preço com deconto: R$"+precoFinal+",00"]
     }
 );
 
+// Desafio
+const desafioMinhaResolucao = cursos.map(
+    ({id, titulo, categoria, preco}) => {
+        let desconto = preco * 0.10;
+        let precoFinal = Math.abs(desconto - preco);
+        return {id,titulo,categoria,preco: precoFinal}
+    }
+);
+const desafioValResolucao = cursos.map(
+    curso => {
+        return{
+            ...curso,
+            preco: curso.preco * 0.9
+        }
+        
+    }
+);
+
+
+
 console.log(blackFriday);
+
+console.log( desafioMinhaResolucao);
+
+console.log(desafioValResolucao);
+
