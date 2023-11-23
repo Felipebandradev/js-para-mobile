@@ -10,11 +10,9 @@ const ciencia = ["Tesla", "Einstens", "Newton", "Darwin"];
 const artistas = ["Bea Duarte", "Lou Garcia", "Mc Sofia", "Ozzy", "John Lennon", "Ananda"];
                     
                      //rest
-const classificar = (...parametro) => {
-    return parametro.sort();
-};
+const classificar = (...parametro) =>  parametro.sort();
 
 
 // chamada
-console.log( classificar(...ciencia) );
-console.log( classificar(...artistas) );
+console.log( classificar(...ciencia) ); //spread
+console.log( classificar(...artistas) ); //spread
