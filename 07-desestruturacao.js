@@ -81,6 +81,7 @@ console.log("-------------------");
 
 // Destructuring para parâmetros de função
 
+const dadosFilme = ({titulo, ano}) => console.log(`Filme: ${titulo} - Ano de Lançamento: ${ano} `);
 
 const filme1 ={
     titulo: "Vingadores",
@@ -92,9 +93,7 @@ const filme2 = {
     ano: "2023"
 }
 
-function dadosFilme(objeto){
-    console.log(`Filme: ${objeto.titulo} - Ano de Lançamento: ${objeto.ano} `);
-}
+
 
 dadosFilme(filme1);
 dadosFilme(filme2);
