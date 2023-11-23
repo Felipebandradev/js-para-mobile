@@ -53,3 +53,48 @@ for( const produto of produtos){
     console.log("Produto: "+converter(produto));
 }
 
+
+console.log("--------------------------------------------");
+
+/* Destructuring em objetos */
+
+const pessoa = {
+    nome: "Moura",
+    idade:19,
+    bairro: "Penha",
+    situacao:"crítica"
+};
+
+const {nome,  bairro, situacao} = pessoa;
+
+console.log(`O aluno ${nome} está em situação ${situacao} no curso`);
+console.log(`Mora na ${bairro} e mesmo assim sempre atrasa...`);
+
+// Criando apelido(aliasses) para a propriedade codigo
+const { codigo: pedido, cursos, preco} = {codigo: "123abc", cursos: ["Figma", "Node.Js"], preco: 1000}
+
+console.log("Nº do Pedido: "+pedido); // pedido é apelido
+console.log("Cursos: "+cursos);
+console.log("Valor: R$"+preco+",00");
+
+console.log("-------------------");
+
+// Destructuring para parâmetros de função
+
+
+const filme1 ={
+    titulo: "Vingadores",
+    ano:2012
+}
+
+const filme2 = {
+    titulo: "Barbie",
+    ano: "2023"
+}
+
+function dadosFilme(objeto){
+    console.log(`Filme: ${objeto.titulo} - Ano de Lançamento: ${objeto.ano} `);
+}
+
+dadosFilme(filme1);
+dadosFilme(filme2);
