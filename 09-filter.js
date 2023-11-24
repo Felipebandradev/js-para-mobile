@@ -51,6 +51,14 @@ const cursosMenosDesign = cursos.filter( curso => curso.categoria !== "Design");
 
 console.log(cursosMenosDesign);
 
-const cursoFrontMobal = cursos.filter(curso => curso.categoria === "Front-End" || "Mobile" &&  curso.preco > 600)
+// console.log("\n");
+
+const cursoFrontMobal = cursos.filter(curso =>   curso.preco >= 600 && curso.categoria === "Front-end" || curso.categoria === "Mobile")
 
 console.log(cursoFrontMobal);
+
+// Desafio
+
+const tituloMobileCursos = cursos.filter( curso => curso.categoria === "Mobile" ).map(curso => curso.titulo);
+
+console.log(tituloMobileCursos);
